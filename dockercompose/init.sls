@@ -1,6 +1,6 @@
 docker-compose stop:
   cmd.run:
-    - name: docker-compose stop
+    - name: docker stop $(docker ps -a -q)
     - cwd: /home/ehg/mediahome/compose/
 
 docker-compose rm:
