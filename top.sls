@@ -1,5 +1,6 @@
 base:
   '*':
+    - stop
     - docker
     - docker/compose
     - core/vhg
