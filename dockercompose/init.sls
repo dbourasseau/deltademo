@@ -1,6 +1,6 @@
 docker-compose:
   cmd.run:
-    - name: docker-compose up
+    - name: docker-compose -d up
     - cwd: /home/ehg/mediahome/compose/
 
 
