@@ -22,6 +22,7 @@ add info box:
 add info box2:
   cmd.run:
     {% if grains['nodename'] != 'delta-ehg10' %}
+    - shell: /bin/bash
     - name: echo 'publicAddr=http://213.140.209.117:100'${HOSTNAME:$i:1} >> box.properties
     {% else %}
     - name: echo 'publicAddr=http://213.140.209.117:1010' >> box.properties
