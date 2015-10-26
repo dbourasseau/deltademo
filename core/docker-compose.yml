@@ -21,7 +21,7 @@ db:
 worker:
   image: dngroup/media-home-worker
   volumes:
-   - /home/ehgmediahome/data:/var/www/html
+   - /home/ehg/mediahome/data:/var/www/html
    - /tmp:/tmp
 squid:
   image: dbourasseau/squid
