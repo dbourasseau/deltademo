@@ -3,9 +3,9 @@ box:
   ports:
    - "9998:9998"
   volumes:
-   - ~/mediahome/data:/var/www/html
+   - /home/ehg/mediahome/data:/var/www/html
    - /tmp:/tmp
-   - ~/mediahome/config:/etc/mediahome
+   - /home/ehg/mediahome/config:/etc/mediahome
   links:
    - db
    - worker
@@ -21,7 +21,7 @@ db:
 worker:
   image: dngroup/media-home-worker
   volumes:
-   - ~/mediahome/data:/var/www/html
+   - /home/ehgmediahome/data:/var/www/html
    - /tmp:/tmp
 squid:
   image: dbourasseau/squid
