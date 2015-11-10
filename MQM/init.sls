@@ -17,6 +17,11 @@
 #  cmd.run:
  #   - name: sudo update-rc.d MQM defaults
 
+service MQM:
+  cmd.run:
+    - name: service MQM restart
+    - cwd: /
+
 
 MQM:
   service.running: 
