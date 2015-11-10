@@ -7,4 +7,4 @@ base:
     - swap
     - core
     - dockercompose
-#    - MQM
+    - MQM
