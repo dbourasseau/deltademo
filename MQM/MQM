@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-DAEMON="Monitor64" #ligne de commande du programme
+DAEMON="/home/ehg/mqm/Monitor64" #ligne de commande du programme
 daemon_OPT="-f 3 8502 91.184.204.24 2000 8000 server"  #argument à utiliser par le programme
 DAEMONUSER="root" #utilisateur du programme
 daemon_NAME="Monitor64" #Nom du programme (doit être identique à l'exécutable)
@@ -17,7 +17,7 @@ d_start () {
 	#start-stop-daemon --name $daemon_NAME --start --quiet --startas /bin/bash -- -c "exec $DAEMON $daemon_OPT > /home/ehg/mqm/logs.txt &"
 start-stop-daemon --start --quiet --chuid $DAEMONUSER    \
  --make-pidfile --pidfile $PIDFILE --background       \
- --startas /bin/bash -- -c "exec $DAEMON $daemon_OPT > /home/ehg/mqm/logs.txt 2>&1" &
+ --startas /bin/bash -- -c "exec $DAEMON $daemon_OPT > /home/ehg/mqm/logs.txt 2>&1"
         log_end_msg $?
 }
 

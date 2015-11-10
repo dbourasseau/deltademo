@@ -10,7 +10,6 @@ box:
    - db
    - worker
    - squid
-  restart: always
 db:
   image: mysql:5.6
   environment:
