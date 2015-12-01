@@ -1,5 +1,5 @@
 box:
-  image: dbourasseau/mediahomedelta
+  image: dngroup/media-home-box:delta
   ports:
    - "9998:9998"
   volumes:
